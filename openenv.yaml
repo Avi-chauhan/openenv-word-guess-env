@@ -1,0 +1,5 @@
+name: word-guess-env
+version: 0.1.0
+description: Wordle-style word guessing RL environment built with Meta OpenEnv
+sdk: docker
+dockerfile: server/Dockerfile

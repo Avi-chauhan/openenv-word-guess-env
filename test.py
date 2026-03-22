@@ -8,7 +8,7 @@ from models import GuessAction
 # A list of guesses to try in order
 guesses = ["crane", "apple", "brave", "delta", "honey", "flame"]
 
-with WordGuessEnv(base_url="http://localhost:8000").sync() as env:
+with WordGuessEnv(base_url="https://avichauhan-word-guess-env.hf.space").sync() as env:
 
     obs = env.reset()
     print("=== Game Started ===")
