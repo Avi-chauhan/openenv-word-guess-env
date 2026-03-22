@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "word-guess-env"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = ["openenv-core", "fastapi", "uvicorn[standard]", "pydantic", "websockets"]
+
+[project.scripts]
+server = "server.app:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
